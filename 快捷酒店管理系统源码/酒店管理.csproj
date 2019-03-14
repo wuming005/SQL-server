@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{315E4779-0F0F-4C2C-9D9C-73B1AE3656B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>酒店管理</RootNamespace>
+    <AssemblyName>酒店管理</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db.cs" />
+    <Compile Include="FrmFjEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFjEdit.Designer.cs">
+      <DependentUpon>FrmFjEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFJList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFJList.Designer.cs">
+      <DependentUpon>frmFJList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFJYDEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFJYDEdit.Designer.cs">
+      <DependentUpon>frmFJYDEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFJYDList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFJYDList.Designer.cs">
+      <DependentUpon>frmFJYDList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFWLX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFWLX.Designer.cs">
+      <DependentUpon>frmFWLX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKFRZEDit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKFRZEDit.Designer.cs">
+      <DependentUpon>frmKFRZEDit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKFRZList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKFRZList.Designer.cs">
+      <DependentUpon>frmKFRZList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhEdit.Designer.cs">
+      <DependentUpon>frmKhEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKhList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhList.Designer.cs">
+      <DependentUpon>frmKhList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectInfo.Designer.cs">
+      <DependentUpon>frmSelectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserList.Designer.cs">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmFjEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmFjEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFJList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFJList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFJYDEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFJYDEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFJYDList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFJYDList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFWLX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFWLX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKFRZEDit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKFRZEDit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKFRZList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKFRZList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhEdit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKhEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKhList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmKhList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryKFXX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryKFXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryKhxx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryKhxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryRZXX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryRZXX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryYdxx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QueryYdxx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TFList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TFList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePwd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>updatePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QueryKFXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryKFXX.Designer.cs">
+      <DependentUpon>QueryKFXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryKhxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryKhxx.Designer.cs">
+      <DependentUpon>QueryKhxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryRZXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryRZXX.Designer.cs">
+      <DependentUpon>QueryRZXX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QueryYdxx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryYdxx.Designer.cs">
+      <DependentUpon>QueryYdxx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TF.Designer.cs">
+      <DependentUpon>TF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TFList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TFList.Designer.cs">
+      <DependentUpon>TFList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePwd.Designer.cs">
+      <DependentUpon>updatePwd.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0Z4122N645.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
